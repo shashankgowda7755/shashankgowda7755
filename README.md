@@ -1,58 +1,84 @@
-<a href="https://oias.in"><img src="assets/banner.png" alt="Shashank M S Gowda, founder of OIAS, Bengaluru. You name it, I build it, and I run it." width="100%"></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/neofetch-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/neofetch-light.svg">
+  <img alt="shashank@oias: Bengaluru, founder of OIAS. Live: artforawareness.art, pointmytress.org, ipledge.co.in, supportacause.co.in, shankarprasad.org. Contact business@oias.in" src="assets/neofetch-dark.svg" width="100%">
+</picture>
 
-Founder of [OIAS](https://oias.in), a studio in Bengaluru. I build products and run them. Four are live.
+<img src="metrics.svg" alt="GitHub metrics for shashankgowda7755: contributions, coding habits, languages, PageSpeed for oias.in, contribution calendar, achievements" width="100%">
 
-## Shipped and live
+### about
+
+I'm Shashank. I run [OIAS](https://oias.in) from Bengaluru, mostly on my own, with AI agents doing a lot of the typing and me doing the deciding and the checking.
+
+Most of what I build is for causes: a drawing competition open to every age in India, a tree registry that keeps publishing the trees that died, a pledge site that hands you a certificate in under a minute, and a crowdfunding site where a person reads every project before it can take money. OIAS also builds custom software and booking and registration portals for other teams.
+
+Nearly all of it runs in private repos, because it runs live products with real people's data. That's why the graph is green and the repo list is short.
+
+### now
+
+- **Art for Awareness** · November theme *Mountains Give Us Life*. Entries close 30 Nov, results on 8 Dec 2026.
+- **iPledge** · 8,778 pledges taken. Next mark: 10,000.
+- **oias.in** · booking a call writes straight to Zoho CRM; agents draft outreach inside a daily limit I set.
+
+### live systems
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://artforawareness.art"><img src="assets/card-afa.jpg" alt="Art for Awareness home page" width="100%"></a>
+<img src="assets/proj-afa.png" width="42" height="42" align="left" alt="Art for Awareness globe artwork">
 <b><a href="https://artforawareness.art">Art for Awareness</a></b><br>
-A monthly art competition for schools. Entries, blind jury scoring and certificates on one platform.<br>
-<sub>For schools and students</sub>
+<sub><code>27 categories</code> <code>Node · Postgres</code></sub><br clear="left">
+Monthly drawing contest. Blind jury, results on a fixed day, a certificate for every entry. Run by OIAS, a COMMUNITREE initiative.
 </td>
 <td width="50%" valign="top">
-<a href="https://ipledge.co.in"><img src="assets/card-ipledge.jpg" alt="iPledge home page" width="100%"></a>
+<img src="assets/proj-pmt.png" width="42" height="42" align="left" alt="Point My Trees satellite forest map">
+<b><a href="https://pointmytress.org">Point My Trees</a></b><br>
+<sub><code>178 forests</code> <code>727k+ trees alive</code></sub><br clear="left">
+A life record for every tree: dated visits, photos, survival, on a public satellite map. Dead trees stay on the map. Built for COMMUNITREE.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="assets/proj-ipledge.png" width="42" height="42" align="left" alt="iPledge pledge artwork">
 <b><a href="https://ipledge.co.in">iPledge</a></b><br>
-Pledge campaigns with instant certificates and sponsor dashboards.<br>
-<sub>For campaigns and sponsors</sub>
+<sub><code>8,778 pledges</code> <code>&lt; 1 min</code></sub><br clear="left">
+Pick a pledge, add your name, download a certificate. No login, no OTP. Sponsors watch sign-ups live.
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
-<a href="https://supportacause.co.in"><img src="assets/card-sac.jpg" alt="Support a Cause about page" width="100%"></a>
+<img src="assets/proj-sac.png" width="42" height="42" align="left" alt="Support a Cause forest path">
 <b><a href="https://supportacause.co.in">Support a Cause</a></b><br>
-Campaign pages for causes and the people who back them.<br>
-<sub>For nonprofits and organisers</sub>
+<sub><code>human review</code> <code>Razorpay</code></sub><br clear="left">
+Crowdfunding for community projects. A person checks every project first; each volunteer's link credits them automatically.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<img src="assets/proj-ashram.png" width="42" height="42" align="left" alt="Shankar Prasad Ashram">
+<b><a href="https://shankarprasad.org">shankarprasad.org</a></b><br>
+<sub><code>45 pages</code> <code>Next.js · Prisma</code></sub><br clear="left">
+Website and back office for an ashram near Gokarna. Staff edit pages as drafts, then publish. Enquiries, stays and donations in one place.
 </td>
 <td width="50%" valign="top">
-<a href="https://oias.in"><img src="assets/card-oias.jpg" alt="OIAS. Open to imagine, built to sustain." width="100%"></a>
-<b><a href="https://oias.in">OIAS</a></b><br>
-The studio behind all of it.<br>
-<sub>For founders and teams</sub>
+<img src="assets/proj-oias.png" width="42" height="42" align="left" alt="OIAS studio mark">
+<b><a href="https://oias.in">oias.in</a></b><br>
+<sub><code>Lighthouse 86 · 93 · 100 · 100</code></sub><br clear="left">
+My own studio site, run the way I tell clients to run theirs: booking → CRM, agent-written follow-ups, a queued blog.
 </td>
 </tr>
 </table>
 
-Most of this code is private because it runs live products. The repos pinned below show what each one does.
+### tools
 
-## What OIAS does
+<a href="https://github.com/shashankgowda7755"><img src="https://skillicons.dev/icons?i=ts,js,nextjs,react,nodejs,express,postgres,supabase,prisma,python,tailwind,vercel,cloudflare,firebase&perline=14" alt="TypeScript, JavaScript, Next.js, React, Node.js, Express, PostgreSQL, Supabase, Prisma, Python, Tailwind, Vercel, Cloudflare, Firebase"></a>
 
-<table>
-<tr>
-<td width="33%" align="center"><img src="assets/i-labs.png" alt="" width="56"><br><b>Labs</b><br>AI, automation and software</td>
-<td width="33%" align="center"><img src="assets/i-studio.png" alt="" width="56"><br><b>Studio</b><br>Brand and design</td>
-<td width="33%" align="center"><img src="assets/i-marketing.png" alt="" width="56"><br><b>Marketing</b><br>Content and SEO</td>
-</tr>
-</table>
+### achievements
 
-## Stack
+<img src="https://github.githubassets.com/assets/pair-extraordinaire-silver-a0b2b472348c.png" width="56" alt="Pair Extraordinaire"> <img src="https://github.githubassets.com/assets/pull-shark-bronze-a37accb528d1.png" width="56" alt="Pull Shark"> <img src="https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png" width="56" alt="Quickdraw"> <img src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="56" alt="YOLO">
 
-<img src="assets/stack.svg" alt="TypeScript, React, Node.js, PostgreSQL, Python, Vercel, Cloudflare" height="40">
+<sub>Pair Extraordinaire · Pull Shark · Quickdraw · YOLO</sub>
 
-<p align="center">
-business@oias.in ·
-<a href="https://oias.in">oias.in</a> ·
-<a href="https://instagram.com/shashank.builds">Instagram</a>
-</p>
+### reach me
+
+[![email](https://img.shields.io/badge/business@oias.in-161009?style=for-the-badge&logo=gmail&logoColor=E0814A)](mailto:business@oias.in)
+[![oias.in](https://img.shields.io/badge/oias.in-161009?style=for-the-badge&logo=googlechrome&logoColor=E0814A)](https://oias.in)
+[![instagram](https://img.shields.io/badge/@shashank.builds-161009?style=for-the-badge&logo=instagram&logoColor=E0814A)](https://instagram.com/shashank.builds)

@@ -1,7 +1,7 @@
 # Regenerates metrics.svg (the middle dashboard of the profile README) every day.
 # Needs one repo secret: METRICS_TOKEN (classic PAT, scopes: repo, read:user, read:org).
 # Optional: PAGESPEED_TOKEN (Google PageSpeed API key); without it the pagespeed plugin often hits Google's shared quota.
-# If METRICS_TOKEN is missing, this job is skipped so the committed metrics.svg is left as-is.
+# If METRICS_TOKEN is missing, the metrics step is skipped so the committed metrics.svg is left as-is.
 name: Metrics
 on:
   schedule: [{ cron: "30 18 * * *" }]   # 00:00 IST
@@ -11,16 +11,13 @@ permissions:
   contents: write
 jobs:
   github-metrics:
-    if: ${{ secrets.METRICS_TOKEN != '' }}
     runs-on: ubuntu-latest
     env:
       METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
     steps:
       - name: Skip when METRICS_TOKEN is missing
         if: ${{ env.METRICS_TOKEN == '' }}
-        run: |
-          echo "METRICS_TOKEN is not set; leaving the committed metrics.svg unchanged."
-          exit 0
+        run: echo "METRICS_TOKEN is not set; leaving the committed metrics.svg unchanged."
       - uses: lowlighter/metrics@latest
         if: ${{ env.METRICS_TOKEN != '' }}
         with:
